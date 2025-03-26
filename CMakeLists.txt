@@ -18,6 +18,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_executable(hq src/main.cpp)
+install(TARGETS hq
+    RUNTIME DESTINATION bin
+)
 target_link_libraries(hq PRIVATE lexbor_static)
 
 

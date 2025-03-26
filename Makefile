@@ -27,4 +27,7 @@ clean:
 clean-deps:
 	rm -rf $(DEPS_BUILD_DIR)
 
+install:
+	cmake --install $(BUILD_DIR)
+
 .PHONY: compile clean clean-deps libs

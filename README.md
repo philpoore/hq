@@ -68,6 +68,7 @@ To build from source:
 git clone https://github.com/philpoore/hq.git
 cd hq
 make
+sudo make install
 ```
 Requirements:
 - C++20 compiler
