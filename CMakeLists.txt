@@ -21,6 +21,7 @@ add_executable(hq src/main.cpp)
 install(TARGETS hq
     RUNTIME DESTINATION bin
 )
+install(FILES docs/hq.1 DESTINATION share/man/man1)
 target_link_libraries(hq PRIVATE lexbor_static)
 
 

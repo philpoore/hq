@@ -1,0 +1,61 @@
+.TH hq 1 "March 2025" "hq 0.1" "User Commands"
+.SH NAME
+hq \- HTML Query CLI tool (like jq, but for HTML)
+
+.SH SYNOPSIS
+.B hq
+.RI [ OPTIONS ] " SELECTOR"
+
+.SH DESCRIPTION
+.B hq
+reads HTML from stdin or a file, then extracts and prints elements using CSS selectors.
+
+.SH OPTIONS
+.TP
+.BR --file " FILE"
+Read HTML from a file instead of stdin.
+
+.TP
+.BR --attr " ATTR"
+Print only the value of a specific attribute.
+
+.TP
+.BR --text
+Print text content only.
+
+.TP
+.BR --inner
+Print inner HTML only.
+
+.TP
+.BR --first
+Return only the first match.
+
+.TP
+.BR --limit " N"
+Return up to N matches.
+
+.TP
+.BR --json
+Output results as a JSON array.
+
+.TP
+.BR --base-url " URL"
+Resolve relative URLs using this base.
+
+.SH EXAMPLES
+Get the title of a webpage:
+.EX
+curl example.com | hq title
+.EE
+
+Get hrefs from links:
+.EX
+hq -f page.html "a" --attr href
+.EE
+
+.SH AUTHOR
+Philip Poore
+
+.SH SEE ALSO
+.BR jq (1), htmlq (1), curl (1)
