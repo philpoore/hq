@@ -1,0 +1,4 @@
+lib/*
+.build-deps
+.vscode
+build
