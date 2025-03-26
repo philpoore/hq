@@ -47,10 +47,9 @@ Note: This tool is under development. Build instructions will be added soon.
 Once released:
 
 ```bash
-git clone https://github.com/yourname/hq.git
+git clone https://github.com/philpoore/hq.git
 cd hq
 make
-sudo make install
 ```
 
 ## ⚙️ CLI Options
@@ -68,23 +67,23 @@ Option	Description
 hq is still in early development. Contributions, ideas, and feedback are welcome!
 
 ## ✅ TODO: MVP Tasks
-- [ ] Accept HTML from stdin or file (--file)
-- [ ] Parse HTML using an external parser (e.g., Gumbo)
-- [ ] Support basic CSS selectors
-- [ ] Return full outer HTML of all matching elements
-- [ ] Add support for:
-    - [ ] `--inner` for innerHTML
-    - [ ] `--attr` for specific attributes
-    - [ ] `--text` for inner text
-    - [ ] `--first` to only return the first match
-- [ ] Build simple CLI interface (manual parsing or use CLI11)
-- [ ] Handle invalid selectors or bad HTML gracefully
+- [x] Accept HTML from stdin or file (--file)
+- [x] Parse HTML using an external parser (e.g., Gumbo)
+- [x] Support basic CSS selectors
+- [x] Return full outer HTML of all matching elements
+- [x] Add support for:
+    - [x] `--inner` for innerHTML
+    - [x] `--attr` for specific attributes
+    - [x] `--text` for inner text
+    - [x] `--first` to only return the first match
+- [x] Build simple CLI interface (manual parsing or use CLI11)
+- [x] Handle invalid selectors or bad HTML gracefully
 
 ## ✨ Nice To Have (Future Ideas)
-- [ ] `--json` output (useful for piping to other tools)
+- [x] `--json` output (useful for piping to other tools)
 - [ ] Fetch URL directly via `--url` (using libcurl)
 - [ ] Regex filtering on the output
-- [ ] Option to resolve relative URLs with a `--base-url`
+- [x] Option to resolve relative URLs with a `--base-url`
 - [ ] Pretty print / syntax-highlighted output
 - [ ] Interactive mode (`hq -i`)
 - [ ] Selector profiling or benchmarking

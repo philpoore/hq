@@ -3,10 +3,12 @@ DEPS_BUILD_DIR=.build-deps
 
 all: libs build compile
 
-libs: lib/CLI11.hpp
+libs: lib/CLI11.hpp lib/nlohmann_json.hpp
 
 lib/CLI11.hpp:
 	./scripts/fetch_lib_CLI11.sh
+lib/nlohmann_json.hpp:
+	./scripts/fetch_lib_nlohmann_json.sh
 
 build:
 	mkdir -p $(BUILD_DIR)
