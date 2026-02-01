@@ -1,0 +1,4 @@
+# Tell GitHub linguist that test files and docs are not source code
+test_files/** linguist-vendored
+docs/** linguist-documentation
+*.html linguist-vendored
